@@ -1,0 +1,76 @@
+.Container_Affichage{
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    h1{
+        font-size: 60px;
+    }
+    table{
+   
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+            background-color: $color_primary;
+            padding: 5px;
+            tr{
+                border: 1px solid $color_black;
+                td{
+                    
+                    font-weight: 900;
+                    font-size:20px;
+                    font-weight: 600;
+                    padding: 5px;
+                   
+                    
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-weight: 600;
+                    font-size: large;
+                    height: 40px;
+                  
+                    
+                   
+                }
+                .Delete{
+                    font-size: 40px;
+                    color: red;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                        cursor: pointer;
+                        transition: all .5s;
+                    }
+                }
+                
+                .Edit{
+                    font-size: 40px;
+                    color: rgb(0, 255, 102);
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: all .5s;
+                        cursor: pointer;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .hide{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .visible{
+        display: absolute;
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+

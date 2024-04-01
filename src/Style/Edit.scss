@@ -1,0 +1,75 @@
+.Container_edit{
+    background-color: $color_primary-25;
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    border: 2px;
+    width: 2000px;
+    height: 800px;
+    transform: translateX(50%,50%);
+    text-align: start;
+    padding: 20px;
+    backdrop-filter:blur(200px);
+    h1{
+        transform: translateX(180px);
+        text-align: center;
+        font-size: 40px;
+    }
+    button{
+        color: red;
+        background-color: $color_white;
+        font-size: 20px;
+        position: absolute;
+
+        left: 840px;
+        top: -100px;
+        z-index: 20;
+    
+        padding:10px 20px ;
+       
+    }
+    form{
+        position: absolute;
+        left: 60%;
+        top: 40%;
+        
+        transform: translate(-50% ,-50%);
+        border: 2px $color_white-0 solid ;
+        border-radius: 20px;
+        padding: 25px;
+        background-image: linear-gradient(120deg , $color_primary 50%, $color_black 50%) ;
+        width: 600px;
+        height: 400px;
+            text-align: start;
+          
+        label{
+            font-size: 20px;
+            margin-bottom: 40px;
+        
+        }
+        input{
+            position: absolute;
+            right:20px;
+            width: 300px;
+            height: 40px;
+            padding:10px;
+        }
+        .Submit{
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+            left: 300px;
+            width: 150px;
+            background-color: $color_primary;
+            border: 0;
+            cursor: pointer;
+            &:hover{
+                color: $color_black;
+                box-shadow: $color_white 2px 2px 5px ;
+                transform: translate(5px);
+                transition: all .5s;
+                font: 17px;
+            }
+        }
+    }
+}

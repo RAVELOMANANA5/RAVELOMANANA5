@@ -1,0 +1,106 @@
+.Container_Content{
+    height: 800px;
+    width: 100%;
+    margin: 10px;
+    h1{
+        color: $color_black;
+        text-align: center;
+        font-size: 60px;
+    }
+    table{
+        
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+            background-color: $color_primary;
+            padding: 5px;
+            tr{
+                
+                td{
+                    font-weight: 600;
+                    padding: 5px;
+                    
+                    
+                }
+            }
+        }
+        tbody{
+            tr{
+                
+                td{
+                    height: 40px;
+                    padding: 5px;
+                    
+                    
+                }
+            }
+        }
+    }
+
+    .Container_crud_search{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &1{
+           
+            height: 100px;
+            width: 100%;
+            padding: 10px;
+            a{
+                font-size: 20px;
+                margin: 20px;
+                padding: 10px;
+                background-color: $color_primary;
+                border-radius: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all .5s;
+                
+             
+            }
+            a:hover{
+                transform: translateX(5px);
+                transition: all .5s;
+                text-shadow: 2px 2px 1px $color_white;
+                padding: 12px;
+                text-decoration: underline;
+            }
+
+        }
+        &2{
+            
+            height: 100px;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            
+            label{
+                font-size: 20px;
+                padding: 10px 20px;
+                background-color: $color_primary;
+                border-radius: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover{
+                    transform: translateX(5px);
+                    transition: all .5s;
+                    text-shadow: 2px 2px 1px $color_white;
+                    padding: 12px 20px;
+                    text-decoration: underline;
+                }    
+            }
+
+            
+            input{
+                
+                width: 400px;
+                height: 50px;
+                border-radius: 10px;
+                padding: 5px;
+                border: $color_black 3px solid;
+            }
+        }
+    }
+}

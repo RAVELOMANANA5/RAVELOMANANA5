@@ -1,0 +1,36 @@
+.Container_header{
+    background-image: linear-gradient(120deg , $color_primary 30%, $color_black 20%) ;
+    width: 300px;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    
+    border: 2px solid black;
+    .logo{
+        width: 100%;
+        height: 80%;
+    }   
+    .Nav{
+        width: 100%;
+        height: 100%;
+        
+        a{
+            background-color: $color_primary;
+            color: $color_black;
+            font-weight: 600;
+            padding: 10px 40px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px $color_white;
+            &:hover{
+                transform: translateX(5px) ;
+                transition: all .5s;
+                background-color: $color_white;
+                box-shadow: 2px 2px 2px $color_primary;
+            }
+        }
+    }
+}
